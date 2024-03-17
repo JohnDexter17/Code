@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Dexter Boticario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="forms">
+        <h2>Order form by CoffeeShop</h2>
+        <form action="">
+            <label>Fullname:</label>
+            <input type="" placeholder="Enter your Fullname">
+            <br>
+            <label>Email:</label>
+            <input type="" placeholder="Enter your email">
+            <br>
+            <label>Address:</label>
+            <input type="" placeholder="Enter your Address">
+            <br>
+            <label>Phone Number:</label>
+            <input type="" placeholder=" Enter Phone Number">
+            <br>
+            <label>Hobbies:</label>
+            <input type="" placeholder="Type your hobbies">
+            <br>
+
+           <div class="container">
+                <a button type="done" class="btn" onclick="openPopup()">Done</button></a>
+
+                <div class="popup" id="popup">
+                    <img src="heart.png">
+                    <h2>Thankyou!</h2>
+                    <p>Your registration form is successfully submitted</p>
+                    <button type="button"onclick="closePopup()">OK</button>
+                </div>
+        </form>
+    </div>
+</div>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Boticario</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Flavors</a></li>
+                    <li><a href="#">Sugarlevel</a></li>
+                    <li><a href="#">Subscriptions</a></li>
+                    <li><a href="#">Menu</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Search">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+        <div class="content">
+            <h1>Welcome to <br><span>CoffeeShop</span> <br>Enjoy!</h1>
+            <p class="par">I hope you like it</p>
+
+                <button class="cn"><a href="#">Order now</a></button>
+
+                <div class="form">
+                    <h2>Login Here</h2>
+                    <input type="email" name="email" placeholder="Enter your email">
+                    <input type="password" name="" placeholder="Enter your password">
+                    <button class="btnn"><a href="#">Login</a></button>
+
+                    <p class="link">Don't have an account?<br>
+                    <a href="#">Sign up </a> here</a></p>
+                    <p class="liw">Log in with</p>
+
+                    <div class="icons">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-snapchat"></ion-icon></a>
+                    </div>
+
+
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+</html>
